@@ -14,11 +14,11 @@ export class InfrastructureStack extends Stack {
 
     console.log(`${DEPLOY_ENVIRONMENT} environment detected. deploying s3 bucket.`)
 
-    const infraBucket = new Bucket(
+    const infrastructureBucket = new Bucket(
       this,
-      "InfraBucket",
+      "infrastructureBucket",
       {
-        bucketName: `your-${DEPLOY_ENVIRONMENT}-infrastructure-bucket`,
+        bucketName: `venerari-${DEPLOY_ENVIRONMENT}-infrastructure-bucket`,
         removalPolicy: RemovalPolicy.DESTROY
       }
     )
