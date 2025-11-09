@@ -6,6 +6,7 @@ Contains two cdk projects, one for deploying a ci/cd pipeline and another housin
     aws configure --proflie canada
 - cdk bootstrap
     cdk bootstrap aws://123431923271/ca-central-1 --profile canada
+    cdk bootstrap aws://123431923271/ca-central-1 --profile us
 - set env
     export DEPLOY_ENVIRONMENT=test
 - set region    
